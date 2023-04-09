@@ -1,10 +1,9 @@
 /* Variables */
-$color-main-accent: #060B35;
-$color-blue-accent: #00ACDC;
+$color-main-accent: #060b35;
+$color-blue-accent: #00acdc;
 $color-secondary: #616070;
-$color-grey: #F3F3F3;
-$color-white: #FFFFFF;
-
+$color-grey: #f3f3f3;
+$color-white: #fff;
 
 body {
   color: $color-main-accent;
@@ -25,7 +24,7 @@ body {
   padding: 0 40px;
 
   &__logo {
-    padding: 10px
+    padding: 10px;
   }
 
   .nav {
@@ -44,17 +43,7 @@ body {
         display: block;
         border-radius: 8px;
         height: 4px;
-        width: 100%
-      }
-
-      &.active {
-        &::after {
-          background-color: $color-blue-accent;
-        }
-
-        a {
-          color: $color-blue-accent;
-        }
+        width: 100%;
       }
 
       a {
@@ -67,6 +56,16 @@ body {
         text-transform: uppercase;
 
         &:hover {
+          color: $color-blue-accent;
+        }
+      }
+
+      &.active {
+        &::after {
+          background-color: $color-blue-accent;
+        }
+
+        a {
           color: $color-blue-accent;
         }
       }
@@ -178,7 +177,7 @@ body {
         width: 100%;
 
         &:hover {
-          opacity: .9;
+          opacity: 0.9;
         }
       }
     }
